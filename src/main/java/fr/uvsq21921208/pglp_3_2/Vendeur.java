@@ -1,14 +1,25 @@
 package fr.uvsq21921208.pglp_3_2;
+/**
+ * class Vendeur.
+ */
+public class Vendeur implements Salaire {
+        /**
+         * comission.
+         */
+        private int commission;
+        /**
+         *
+         * @param commissionParametre commission
+        */
+        public Vendeur(final int commissionParametre) {
+        this.commission =  commissionParametre;
+        }
+        /**
+        * @return salaire.
+        */
+        public float calculerSalaire() {
 
-public class Vendeur implements Salaire{
-	private int commission;
-	
-	public Vendeur(int commission) {
-        this.commission =  commission;
-	}
-	public float calculerSalaire() {
-		// TODO Auto-generated method stub
-		return salaireDeBase + commission;
-	}
+           return SALAIRE_DE_BASE + commission;
+        }
 
 }

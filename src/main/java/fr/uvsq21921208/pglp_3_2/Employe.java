@@ -1,16 +1,29 @@
 package fr.uvsq21921208.pglp_3_2;
-
-public class Employe implements Salaire{
+/**
+ * class employee.
+ */
+public class Employe implements Salaire {
+    /**
+     * nombreAnnee d'experience.
+     */
     private int nombreAnnee;
-    Employe(){
-    	this.nombreAnnee = 0;
+    /**
+     * Constructeur.
+     */
+    Employe() {
+       this.nombreAnnee = 0;
     }
+    /**
+     * incfrementer le nombre d'annee d'experience.
+     */
     public void incrementerAnnee() {
-    	this.nombreAnnee += 1;
+        this.nombreAnnee += 1;
     }
-	public float calculerSalaire() {
-		return salaireDeBase + ( nombreAnnee * 20);
-	}
-	
-
+    /**
+     * @return salaireDebase salaire.
+     */
+    public float calculerSalaire() {
+        final int fixedPrime = 20;
+        return SALAIRE_DE_BASE + (nombreAnnee * fixedPrime);
+    }
 }

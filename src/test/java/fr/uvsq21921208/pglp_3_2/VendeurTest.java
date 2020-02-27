@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import fr.uvsq21921208.pglp_3_2.Vendeur;
+
 public class VendeurTest {
 	
 	
