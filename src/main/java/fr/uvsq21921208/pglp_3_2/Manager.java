@@ -18,7 +18,7 @@ private static final int FIXED_PRIME = 100;
       nombreEmployee = 0;
     }
     /**
-    * @return salaire
+    * @return salaire le salaire calculé 
     */
     public float calculerSalaire() {
       return SALAIRE_DE_BASE + (FIXED_PRIME * nombreEmployee);
