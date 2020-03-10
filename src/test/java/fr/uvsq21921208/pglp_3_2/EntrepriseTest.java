@@ -15,11 +15,11 @@ public class EntrepriseTest {
      */
     @Test
     public void calculerSommeSalaireTest() {
-        final double expectedSalary = 5240;
+        final double expectedSalary = 4840;
         Employe e = new Employe();
         e.incrementerAnnee();
         e.incrementerAnnee();
-        final int commission = 200;
+        final int commission = 300;
         Vendeur v = new Vendeur(commission);
         Entreprise ent = new Entreprise();
         Manager m = new Manager();
